@@ -19,4 +19,11 @@
     <PackageReference Include="Concentus" Version="2.2.2" />
   </ItemGroup>
 
+  <!-- La version de Linux vive en su propia carpeta y se compila por separado. -->
+  <ItemGroup>
+    <Compile Remove="linux/**" />
+    <None Remove="linux/**" />
+    <EmbeddedResource Remove="linux/**" />
+  </ItemGroup>
+
 </Project>
